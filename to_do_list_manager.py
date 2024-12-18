@@ -52,7 +52,7 @@ def mark_task():
         else:
             print("Which task have you completed?")
             print(tasks)
-            marked_choice = input("Select a task: ")
+            marked_choice = input("Select a task: ").capitalize()
             if marked_choice not in tasks:
                 print("ERROR: Invalid Input")
                 input("Press any key to try again...")
